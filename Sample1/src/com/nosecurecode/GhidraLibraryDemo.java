@@ -1,3 +1,14 @@
+/*
+  PROGRAM : Coding Ghidra
+  AUTHOR  : NADER SHALLABI <nader@nosecurecode.com>
+
+  This sample code is free for use, redistribution and/or
+  modification without any explicit permission from the author.
+
+  This sample code is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY, implied or explicit.
+*/
+
 package com.nosecurecode;
 
 import java.io.*;
