@@ -1,6 +1,6 @@
 # Coding Ghidra
 
-`CURRENTLY WORKING ON A NEW LIBRARY TO ENABLE USING GHIDRA AS A REVERSE ENGINEERING CODE LIBRARY WITH USE CASES, WILL UPDATE THIS REPOSITORY SOON`
+`CURRENTLY WORKING ON A NEW LIBRARY TO SIMPLIFY USING GHIDRA AS A REVERSE ENGINEERING JAVA LIBRARY, WITH ADDITIONAL USE CASES,...WILL UPDATE THIS REPOSITORY SOON`
 
 Ghidra Java code can be bundled in a **Java Archive** file (**JAR**), this makes it easy to use Ghidra as a library for more advanced reverse engineering tasks, in this repository you will find samples to demonstrate how to use Ghidra as a RE library.
 
