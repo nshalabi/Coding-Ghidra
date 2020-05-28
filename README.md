@@ -36,8 +36,6 @@ When invoking headless analysis using any of the previous methods, the analysis 
 
 `// Print all functions in the program: [return type] [calling convention] [function name]`
 
-`// Highlight the IsDebuggerPresent() API function`
-
 `while (externalFunctions.hasNext()) {`
 
 `    Function function = externalFunctions.next();`
