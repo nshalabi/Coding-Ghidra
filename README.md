@@ -54,6 +54,11 @@ The headless mode combined with Ghidra plugins, are powerful automation tools, t
 
 1. Add more samples and use cases.
 2. Add more event handlers (for example, PreProcessHandler, Pre/PostScriptRunHandler).
+
+## Ghidra Headless Analysis - References
+
+1. Presentation : https://ghidra.re/courses/GhidraClass/Intermediate/HeadlessAnalyzer.html
+2. Documentation : https://ghidra.re/ghidra_docs/analyzeHeadlessREADME.html
  
 More samples will be added in the future, and all are welcome to contribute.
 
