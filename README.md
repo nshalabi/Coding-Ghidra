@@ -1,6 +1,6 @@
 # Coding Ghidra - Library and Samples
 
-Ghidra Java code can be bundled in a **Java Archive** file (**JAR**), this makes it easy to use Ghidra as a library for more advanced reverse engineering tasks, in this repository you will find samples to demonstrate how to use Ghidra as a RE library.
+Ghidra Java code can be bundled in a **Java Archive** file (**JAR**), this makes it easy to use Ghidra as a library for more advanced reverse engineering tasks, in this repository you will find samples to demonstrate how to use Ghidra as a disassembler library.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Ghidra supports a headless analysis mode that can be used to automate many of Gh
 
 `public static void runHeadlessCmd(String [] headlessCmdArgs, LibProgramHandler handler`
 
-Both methods are identical, the only difference is in the way the headless command is passed. The first method uses a command line in precisely the same format of the headless analyzer (refer to **analyzeHeadlessREADME.html** for more information), for example, the following command string (source: **analyzeHeadlessREADME.html**) imports a binary /binaries/binary1.exe to a local Ghidra Project named Project1. Analysis is on by default.
+Both methods are identical, the only difference is in the way the headless command is passed. The first method uses a command line in precisely the same format of the headless analyzer (refer to [analyzeHeadlessREADME.html](https://ghidra.re/courses/GhidraClass/Intermediate/HeadlessAnalyzer.html) for more information), for example, the following command string (source: [analyzeHeadlessREADME.html](https://ghidra.re/courses/GhidraClass/Intermediate/HeadlessAnalyzer.html)) imports a binary /binaries/binary1.exe to a local Ghidra Project named Project1. Analysis is on by default.
 
 `/Users/user/ghidra/projects Project1 -import /binaries/binary1.exe`
 
@@ -28,7 +28,7 @@ The second argument is the callback (handler), this handler is an instance of an
 `    public void PostProcessHandler(Program program);`
 `}`
 
-When invoking the headless analyzer using any of the previous methods, the analyzer will pass an instance of **ghidra.program.model.listing.Program** object immediately after the analysis is done, but before the analyzer fully returns (if handler parameter is not null), this object is the result of the headless analysis. As an example (check Sample 1), we will use this object to dump program imports:
+When invoking headless analysis using any of the previous methods, the analysis code will pass an instance of **ghidra.program.model.listing.Program** object immediately after the binary analysis is done, but before it fully returns to invoking code (if handler parameter is not null), this object is the outcome of the headless analysis. As an example, the following code uses this object to dump all program imports:
 
 `// Get a list of external functions used`
 
@@ -48,7 +48,7 @@ When invoking the headless analyzer using any of the previous methods, the analy
 
 ## Objective
 
-The headless mode, combined with Ghidra plugins, are powerful automation tools, the GhidraLibrary inherits all those features and allows for it to be easily embedded in your own, standalone applications or integration layer with other applications/solutions.
+The headless mode combined with Ghidra plugins, are powerful automation tools, the GhidraLibrary inherits all those features and allows for it to be easily embedded in your own, standalone applications or integration layer with other applications/solutions.
 
 ## Roadmap
 
