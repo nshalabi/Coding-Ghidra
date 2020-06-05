@@ -70,7 +70,7 @@ Demonstrates basic usage of library initialization, loading a binary file for an
 
 ## Sample 2
 
-Using Ghidra in Vulnerability Research, based on the ![Ghidra Plugin Development for Vulnerability Research - Part-1](https://www.somersetrecon.com/blog/2019/ghidra-plugin-development-for-vulnerability-research-part-1) article
+Using Ghidra in Vulnerability Research, based on the [Ghidra Plugin Development for Vulnerability Research - Part-1](https://www.somersetrecon.com/blog/2019/ghidra-plugin-development-for-vulnerability-research-part-1) article
 
 **Sample output**
 
