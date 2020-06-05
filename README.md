@@ -72,8 +72,6 @@ Demonstrates basic usage of library initialization, loading a binary file for an
 
 Using Ghidra in Vulnerability Research, based on the [Ghidra Plugin Development for Vulnerability Research - Part-1](https://www.somersetrecon.com/blog/2019/ghidra-plugin-development-for-vulnerability-research-part-1) article. The code demonstrates using cross references to identify code units calling external functions.
 
-Using the below code, we can identify cross references to each sink: 
-
 **Sample output**
 
 [Function]>-----Address of calling function----->[Exeternal Function]
