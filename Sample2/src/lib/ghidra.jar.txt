@@ -1,0 +1,1 @@
+Run buildGhidraJar.bat batch file located in Ghidera archive under the "support" folder, then copy the generated ghidra.jar to this folder

@@ -14,7 +14,7 @@ Ghidra supports a headless analysis mode that can be used to automate many of Gh
 
 `public static void runHeadlessCmd(String [] headlessCmdArgs, LibProgramHandler handler`
 
-Both methods are identical, the only difference is in the way the headless command is passed. The first method uses a command line in precisely the same format of the headless analyzer (refer to [analyzeHeadlessREADME.html](https://ghidra.re/courses/GhidraClass/Intermediate/HeadlessAnalyzer.html) for more information), for example, the following command string (source: [analyzeHeadlessREADME.html](https://ghidra.re/courses/GhidraClass/Intermediate/HeadlessAnalyzer.html)) imports a binary /binaries/binary1.exe to a local Ghidra Project named Project1. Analysis is on by default.
+Both methods are identical, the only difference is in the way the headless command is passed. The first method uses a command line in precisely the same format of the headless analyzer (refer to [analyzeHeadlessREADME.html](https://ghidra.re/ghidra_docs/analyzeHeadlessREADME.html) for more information), for example, the following command string (source: [analyzeHeadlessREADME.html](https://ghidra.re/ghidra_docs/analyzeHeadlessREADME.html)) imports a binary /binaries/binary1.exe to a local Ghidra Project named Project1. Analysis is on by default.
 
 `/Users/user/ghidra/projects Project1 -import /binaries/binary1.exe`
 
@@ -67,3 +67,13 @@ More samples will be added in the future, and all are welcome to contribute.
 Demonstrates basic usage of library initialization, loading a binary file for analysis and listing all external functions
 
 ![Sample1](https://github.com/nshalabi/Coding-Ghidra/blob/master/Media/Sample1.PNG "Sample1")
+
+## Sample 2
+
+Using Ghidra in Vulnerability Research, based on the ![Ghidra Plugin Development for Vulnerability Research - Part-1](https://www.somersetrecon.com/blog/2019/ghidra-plugin-development-for-vulnerability-research-part-1) article
+
+**Sample output**
+
+`[FUN_00403ed2]>-----00403ee7----->[lstrcpynA]`
+
+`[FUN_00405a0c]>-----00405a19----->[lstrcpynA]`
