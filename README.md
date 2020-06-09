@@ -74,7 +74,7 @@ Using Ghidra in Vulnerability Research, based on the [Ghidra Plugin Development 
 
 **Sample output**
 
-[Function]>-----Address of calling function----->[Exeternal Function]
+[Function]>-----Address of calling function----->[External Function]
 
 `[FUN_00403ed2]>-----00403ee7----->[lstrcpynA]`
 
