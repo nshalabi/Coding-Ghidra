@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9944cef2-22f7-4cb2-8a6e-f1cf62a279da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Sample1/src/lib/ghidra.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibGhidra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibProgramHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sample1/src/com/nosecurecode/libghidra/LibProgramHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1cN7EutcOtgvp5eK6dqyQZ1zl9y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,9 +55,9 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552326620488" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -48,6 +76,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,89 +99,12 @@
       <workItem from="1591353526670" duration="323000" />
       <workItem from="1591380745263" duration="1402000" />
       <workItem from="1591382907255" duration="941000" />
+      <workItem from="1641220331481" duration="3043000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="176" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590695382645">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="176" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1590695382645" />
-    <state x="451" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590695377067">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="451" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.860@0.0.1440.860" timestamp="1590695377067" />
-    <state x="384" y="100" key="CommitChangelistDialog2" timestamp="1591317278514">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="384" y="100" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1591317278514" />
-    <state width="511" height="466" key="DebuggerActiveHint" timestamp="1591301050197">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="511" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1591301050197" />
-    <state width="1638" height="386" key="GridCell.Tab.0.bottom" timestamp="1591382150794">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1638" height="386" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591381925805" />
-    <state width="1638" height="386" key="GridCell.Tab.0.bottom/0.23.1680.959@0.23.1680.959" timestamp="1591382150794" />
-    <state width="1638" height="386" key="GridCell.Tab.0.center" timestamp="1591382150793">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1638" height="386" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591381925804" />
-    <state width="1638" height="386" key="GridCell.Tab.0.center/0.23.1680.959@0.23.1680.959" timestamp="1591382150793" />
-    <state width="1638" height="386" key="GridCell.Tab.0.left" timestamp="1591382150793">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1638" height="386" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591381925803" />
-    <state width="1638" height="386" key="GridCell.Tab.0.left/0.23.1680.959@0.23.1680.959" timestamp="1591382150793" />
-    <state width="1638" height="386" key="GridCell.Tab.0.right" timestamp="1591382150794">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1638" height="386" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591381925804" />
-    <state width="1638" height="386" key="GridCell.Tab.0.right/0.23.1680.959@0.23.1680.959" timestamp="1591382150794" />
-    <state width="1638" height="362" key="GridCell.Tab.1.bottom" timestamp="1591302850092">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1638" height="362" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591301787258" />
-    <state width="1638" height="362" key="GridCell.Tab.1.bottom/0.23.1680.959@0.23.1680.959" timestamp="1591302850092" />
-    <state width="1638" height="362" key="GridCell.Tab.1.center" timestamp="1591302850091">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1638" height="362" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591301787257" />
-    <state width="1638" height="362" key="GridCell.Tab.1.center/0.23.1680.959@0.23.1680.959" timestamp="1591302850091" />
-    <state width="1638" height="362" key="GridCell.Tab.1.left" timestamp="1591302850091">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1638" height="362" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591301787257" />
-    <state width="1638" height="362" key="GridCell.Tab.1.left/0.23.1680.959@0.23.1680.959" timestamp="1591302850091" />
-    <state width="1638" height="362" key="GridCell.Tab.1.right" timestamp="1591302850092">
-      <screen x="0" y="23" width="1680" height="959" />
-    </state>
-    <state width="1638" height="362" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591301787258" />
-    <state width="1638" height="362" key="GridCell.Tab.1.right/0.23.1680.959@0.23.1680.959" timestamp="1591302850092" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1591315244783">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1591315244783" />
-    <state x="578" y="270" key="extract.method.dialog" timestamp="1591381590283">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="578" y="270" key="extract.method.dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591381590283" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1591315023797">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591315023797" />
+    <option name="version" value="3" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9944cef2-22f7-4cb2-8a6e-f1cf62a279da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ghidra.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/GhidraLibraryDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +37,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1cN7EutcOtgvp5eK6dqyQZ1zl9y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -38,6 +60,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -55,6 +78,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -71,41 +95,47 @@
       <workItem from="1590695363979" duration="267000" />
       <workItem from="1590700231046" duration="817000" />
       <workItem from="1590701288168" duration="109000" />
+      <workItem from="1641203550097" duration="4646000" />
+      <workItem from="1641210726132" duration="4425000" />
+      <workItem from="1641219870651" duration="430000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="176" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590695382645">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="176" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1590695382645" />
-    <state x="451" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590695377067">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="451" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.860@0.0.1440.860" timestamp="1590695377067" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1590701054521">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center" timestamp="1590701054521">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left" timestamp="1590701054521">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right" timestamp="1590701054521">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590700802606" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590701054521" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/src/lib/ghidra.jar!/ghidra/framework/HeadlessGhidraApplicationConfiguration.class</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/src/lib/ghidra.jar!/ghidra/util/classfinder/ClassSearcher.class</url>
+          <line>141</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/src/lib/ghidra.jar!/ghidra/util/classfinder/ClassSearcher.class</url>
+          <line>145</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/nosecurecode/Demo.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

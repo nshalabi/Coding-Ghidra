@@ -17,13 +17,14 @@ import ghidra.program.model.listing.Program;
 import com.nosecurecode.libghidra.*;
 
 /**
- * Dump program external functions
+ * Demo: Dump program external functions, this program demostrates basic usage of the Coding-Ghidra library
+ *       The sample demonstrates looking for commonly used anti-debugging APIs, such as "IsDebuggerPresent" API function
  */
 public class Demo implements LibProgramHandler {
     public static void main(String args[]) throws Exception {
 
         // Option 1 to call headless analyzer using a full command
-        String headlessCmd = "/Users/user/ghidra/projects Project1 -import /binaries/binary1.exe";
+        String headlessCmd = "/Users/nadershallabi/ghidra/projects Project1 -import /Users/nadershallabi/Downloads/1.exe -overwrite";
 
         // We need an instance of this class to pass the analyzed program handler
         Demo ghidraLibraryDemo = new Demo();

@@ -1,5 +1,5 @@
 /*
-  PROGRAM : Coding Ghidra - Sample 1
+  PROGRAM : Coding Ghidra - Sample 2
   AUTHOR  : NADER SHALLABI <nader@nosecurecode.com>
 
   This sample code is free for use, redistribution and/or
@@ -19,17 +19,17 @@ import ghidra.program.model.symbol.ExternalReference;
 import ghidra.program.model.symbol.Reference;
 import ghidra.program.model.symbol.ReferenceIterator;
 
-import javafx.util.Pair;
+import java.util.Map;
 import java.util.*;
 
 /**
- * Dump program external functions
+ * Demo: Identify vulnerable runtime functions and cross-reference them with parent functions
  */
 public class Demo implements LibProgramHandler {
     public static void main(String args[]) throws Exception {
 
         // Option 1 to call headless analyzer using a full command
-        String headlessCmd = "/Users/nadershallabi/Desktop/OutputPad Sample2 -import /Users/nadershallabi/Desktop/BinaryCollection -overwrite";
+        String headlessCmd = "/Users/nadershallabi/ghidra/projects ProjectCrossReferences -import /Users/nadershallabi/Downloads/CoreFTPServer505.exe -overwrite";
 
         // We need an instance of this class to pass the analyzed program handler
         Demo ghidraLibraryDemo = new Demo();
@@ -45,6 +45,7 @@ public class Demo implements LibProgramHandler {
     @Override
     public void PostProcessHandler(Program program) {
 
+        System.out.println("\033[1;33m");
         System.out.println("================================");
         System.out.println("PROCESSING PROGRAM : " + program.getName());
         System.out.println("================================");
@@ -71,7 +72,7 @@ public class Demo implements LibProgramHandler {
 
         List<String> sinks = Arrays.asList(sinks_array);
 
-        Hashtable<String, Vector<Pair<String, String>>> sink_dic = new Hashtable<String, Vector<Pair<String, String>>>();
+        Hashtable<String, Vector<Map.Entry<String, String>>> sink_dic = new Hashtable<String, Vector<Map.Entry<String, String>>>();
         ArrayList<String> duplicate = new ArrayList<String>();
 
         Listing listing = program.getListing();
@@ -111,12 +112,12 @@ public class Demo implements LibProgramHandler {
 
                         // check sink dictionary for parent function name
                         if (!sink_dic.containsKey(parent_func_name)) {
-                            Vector<Pair<String, String>> function_address_pair = new Vector<Pair<String, String>>();
-                            function_address_pair.add(new Pair<String, String>(func_name, call_addr.toString()));
+                            Vector<Map.Entry<String, String>> function_address_pair = new Vector<Map.Entry<String, String>>();
+                            function_address_pair.add(new AbstractMap.SimpleEntry<String, String>(func_name, call_addr.toString()));
                             sink_dic.put(parent_func_name, function_address_pair);
                         }
                         else {
-                            sink_dic.get(parent_func_name).add(new Pair<String, String>(func_name, call_addr.toString()));
+                            sink_dic.get(parent_func_name).add(new AbstractMap.SimpleEntry<String, String>(func_name, call_addr.toString()));
                         }
                     }
                 }
@@ -128,17 +129,18 @@ public class Demo implements LibProgramHandler {
         System.out.println("~===============================");
         System.out.println("~ END OF PROCESSING PROGRAM : " + program.getName());
         System.out.println("~===============================");
+        System.out.println("\033[0;33m");
     }
 
     /**
      * Prints functions list (findings)
      * @param sink_dic
      */
-    private void printDiscoveredFunctions(Hashtable<String, Vector<Pair<String, String>>> sink_dic) {
+    private void printDiscoveredFunctions(Hashtable<String, Vector<Map.Entry<String, String>>> sink_dic) {
         for (String parent_func_name : sink_dic.keySet()) {
-            Vector<Pair<String, String>> item = sink_dic.get(parent_func_name);
+            Vector<Map.Entry<String, String>> item = sink_dic.get(parent_func_name);
             for (int i = 0; i < item.size(); i++) {
-                Pair<String, String> item2 = item.get(i);
+                Map.Entry<String, String> item2 = item.get(i);
                 String func_name = item2.getKey();
                 String call_addr = item2.getValue();
                 System.out.println("[" + parent_func_name + "]>-----" + call_addr + "----->[" + func_name + "]");
