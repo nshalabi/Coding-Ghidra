@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9944cef2-22f7-4cb2-8a6e-f1cf62a279da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/ghidra.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibGhidra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessErrorLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GhidraLib/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibGhidra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessErrorLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibHeadlessTimedTaskMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nosecurecode/libghidra/LibProgramHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +84,7 @@
       <workItem from="1641203550097" duration="4646000" />
       <workItem from="1641210726132" duration="4425000" />
       <workItem from="1641219870651" duration="430000" />
+      <workItem from="1641226585562" duration="106000" />
     </task>
     <servers />
   </component>

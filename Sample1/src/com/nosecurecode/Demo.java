@@ -17,7 +17,7 @@ import ghidra.program.model.listing.Program;
 import com.nosecurecode.libghidra.*;
 
 /**
- * Demo: Dump program external functions, this program demostrates basic usage of the Coding-Ghidra library
+ * Demo: Dump program external functions, this program demonstrates basic usage of the Coding-Ghidra library
  *       The sample demonstrates looking for commonly used anti-debugging APIs, such as "IsDebuggerPresent" API function
  */
 public class Demo implements LibProgramHandler {
