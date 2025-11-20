@@ -22,7 +22,8 @@ package com.nosecurecode.libghidra;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.*;
 
@@ -88,9 +89,9 @@ public class LibGhidra {
 		if (args[0].startsWith("ghidra:")) {
 			optionStartIndex = 1;
 			try {
-				ghidraURL = new URL(args[0]);
+				ghidraURL = new URI(args[0]).toURL();
 			}
-			catch (MalformedURLException e) {
+			catch (URISyntaxException e) {
 				System.err.println("Invalid Ghidra URL: " + args[0]);
 				usage();
 			}

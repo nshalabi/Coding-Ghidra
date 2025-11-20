@@ -89,7 +89,7 @@ public class LibHeadlessAnalyzer {
 	 * Gets a headless analyzer, initializing the application if necessary with the specified 
 	 * logging parameters.  An {@link IllegalStateException} will be thrown if the application has 
 	 * already been initialized or a headless analyzer has already been retrieved.  In these cases,
-	 * the headless analyzer should be gotten with {@link LibHeadlessAnalyzer#getInstance()}.
+	 * the headless analyzer should be gotten with {@link LibHeadlessAnalyzer#getInstance(LibProgramHandler)}.
 	 * 
 	 * @param logFile The desired application log file.  If null, no application logging will take place.
 	 * @param scriptLogFile The desired scripting log file.  If null, no script logging will take place.
@@ -214,9 +214,6 @@ public class LibHeadlessAnalyzer {
 		System.setProperty("java.awt.headless", "true");
 		System.setProperty(SystemUtilities.HEADLESS_PROPERTY, Boolean.TRUE.toString());
 
-		// Allows handling of old content which did not have a content type property
-		DomainObjectAdapter.setDefaultContentClass(ProgramDB.class);
-
 		// Put analyzer in its default state
 		reset();
 	}
@@ -257,10 +254,10 @@ public class LibHeadlessAnalyzer {
 	 * @param filesToImport directories and files to be imported (null or empty 
 	 *                      is acceptable if we are in -process mode)
 	 * @throws IOException if there was an IO-related problem
-	 * @throws MalformedURLException specified URL is invalid
+	 * @throws URISyntaxException specified URL is invalid
 	 */
 	public void processURL(URL ghidraURL, List<File> filesToImport)
-			throws IOException, MalformedURLException {
+			throws IOException, URISyntaxException {
 
 		if (options.readOnly && options.commit) {
 			Msg.error(this,
@@ -270,7 +267,7 @@ public class LibHeadlessAnalyzer {
 		}
 
 		if (!"ghidra".equals(ghidraURL.getProtocol())) {
-			throw new MalformedURLException("Unsupported repository URL: " + ghidraURL);
+			throw new URISyntaxException(ghidraURL.toString(), "Unsupported repository URL");
 		}
 
 		if (GhidraURL.isLocalProjectURL(ghidraURL)) {
@@ -281,12 +278,12 @@ public class LibHeadlessAnalyzer {
 
 		String path = ghidraURL.getPath();
 		if (path == null) {
-			throw new MalformedURLException("Unsupported repository URL: " + ghidraURL);
+			throw new URISyntaxException(ghidraURL.toString(), "Unsupported repository URL");
 		}
 
 		path = path.trim();
 		if (path.length() == 0) {
-			throw new MalformedURLException("Unsupported repository URL: " + ghidraURL);
+			throw new URISyntaxException(ghidraURL.toString(), "Unsupported repository URL");
 		}
 
 		if (!options.runScriptsNoImport) { // Running in -import mode
@@ -298,13 +295,13 @@ public class LibHeadlessAnalyzer {
 
 			if (!path.endsWith("/")) {
 				// force explicit folder path so that non-existent folders are created on import
-				ghidraURL = new URL("ghidra", ghidraURL.getHost(), ghidraURL.getPort(), path + "/");
+				ghidraURL = new URI("ghidra", null, ghidraURL.getHost(), ghidraURL.getPort(), path + "/", null, null).toURL();
 			}
 		}
 		else { // Running in -process mode
 			if (path.endsWith("/") && path.length() > 1) {
-				ghidraURL = new URL("ghidra", ghidraURL.getHost(), ghidraURL.getPort(),
-					path.substring(0, path.length() - 1));
+				ghidraURL = new URI("ghidra", null, ghidraURL.getHost(), ghidraURL.getPort(),
+						path.substring(0, path.length() - 1), null, null).toURL();
 			}
 		}
 
@@ -327,7 +324,7 @@ public class LibHeadlessAnalyzer {
 			Object obj = c.getContent();
 			if (!(obj instanceof GhidraURLWrappedContent)) {
 				throw new IOException(
-					"Connect to repository folder failed. Response code: " + c.getResponseCode());
+					"Connect to repository folder failed. Status code: " + c.getStatusCode());
 			}
 			GhidraURLWrappedContent wrappedContent = (GhidraURLWrappedContent) obj;
 			Object content = null;
@@ -350,9 +347,6 @@ public class LibHeadlessAnalyzer {
 				else {
 					processWithImport(folder.getPathname(), filesToImport);
 				}
-			}
-			catch (NotFoundException e) {
-				throw new IOException("Connect to repository folder failed");
 			}
 			finally {
 				if (content != null) {
@@ -1031,7 +1025,8 @@ public class LibHeadlessAnalyzer {
 					mgr.startAnalysis(TaskMonitor.DUMMY); // kick start
 
 					Msg.info(this, "REPORT: Analysis succeeded for file: " + fileAbsolutePath);
-					GhidraProgramUtilities.setAnalyzedFlag(program, true);
+
+					GhidraProgramUtilities.markProgramAnalyzed(program);
 				}
 				else {
 					LibHeadlessTimedTaskMonitor timerMonitor =
@@ -1054,7 +1049,7 @@ public class LibHeadlessAnalyzer {
 						timerMonitor.cancel();
 
 						Msg.info(this, "REPORT: Analysis succeeded for file: " + fileAbsolutePath);
-						GhidraProgramUtilities.setAnalyzedFlag(program, true);
+						GhidraProgramUtilities.markProgramAnalyzed(program);
 					}
 				}
 			}
@@ -1486,7 +1481,7 @@ public class LibHeadlessAnalyzer {
 					public boolean createKeepFile() throws CancelledException {
 						return false;
 					}
-				}, true, TaskMonitor.DUMMY);
+				}, TaskMonitor.DUMMY);
 				Msg.info(this, "REPORT: Committed file changes to repository: " + df.getPathname());
 			}
 			catch (IOException e) {
@@ -1657,24 +1652,24 @@ public class LibHeadlessAnalyzer {
 		if (options.loaderClass == null) {
 			// User did not specify a loader
 			if (options.language == null) {
-				program = AutoImporter.importByUsingBestGuess(file, null, this, messageLog,
-					TaskMonitor.DUMMY);
+				program = AutoImporter.importByUsingBestGuess(file, null, null, this, messageLog,
+					TaskMonitor.DUMMY).getPrimaryDomainObject();
 			}
 			else {
-				program = AutoImporter.importByLookingForLcs(file, null, options.language,
-					options.compilerSpec, this, messageLog, TaskMonitor.DUMMY);
+				program = AutoImporter.importByLookingForLcs(file, null, null, options.language,
+					options.compilerSpec, this, messageLog, TaskMonitor.DUMMY).getPrimaryDomainObject();
 			}
 		}
 		else {
 			// User specified a loader
 			if (options.language == null) {
-				program = AutoImporter.importByUsingSpecificLoaderClass(file, null,
-					options.loaderClass, options.loaderArgs, this, messageLog, TaskMonitor.DUMMY);
+				program = AutoImporter.importByUsingSpecificLoaderClass(file, null, null,
+					options.loaderClass, options.loaderArgs, this, messageLog, TaskMonitor.DUMMY).getPrimaryDomainObject();
 			}
 			else {
-				program = AutoImporter.importByUsingSpecificLoaderClassAndLcs(file, null,
+				program = AutoImporter.importByUsingSpecificLoaderClassAndLcs(file, null, null,
 					options.loaderClass, options.loaderArgs, options.language, options.compilerSpec,
-					this, messageLog, TaskMonitor.DUMMY);
+					this, messageLog, TaskMonitor.DUMMY).getPrimaryDomainObject();
 			}
 		}
 
@@ -1866,7 +1861,7 @@ public class LibHeadlessAnalyzer {
 
 		HeadlessProject(HeadlessGhidraProjectManager projectManager, GhidraURLConnection connection)
 				throws IOException {
-			super(projectManager, connection);
+			super(projectManager, (DefaultProjectData) connection.getProjectData());
 		}
 
 		HeadlessProject(HeadlessGhidraProjectManager projectManager, ProjectLocator projectLocator)
